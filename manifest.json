@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Anti Distraction",
+    "version": "1.0",
+    "description": "Removes YouTube home page content so I don't get distracted",
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
